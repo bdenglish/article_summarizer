@@ -3,7 +3,7 @@ Summarize an article with most relevant sentences and keywords
 
 
 ## Example
-```
+```python
 import article_summarizer
 article_summary = ArticleSummary(url="http://en.wikipedia.org/wiki/Content_analysis")
 print(article_summary.article.title)
