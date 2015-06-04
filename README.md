@@ -3,6 +3,7 @@ Summarize an article with most relevant sentences and keywords
 
 
 ## Example
+```
 import article_summarizer
 article_summary = ArticleSummary(url="http://en.wikipedia.org/wiki/Content_analysis")
 print(article_summary.article.title)
@@ -11,3 +12,4 @@ for i in xrange(0, 5):
 sorted_keywords = sorted(article_summary.keywords.items(), key=itemgetter(1), reverse=True)
 for i in xrange(0, 5):
     print(sorted_keywords[i])
+```
